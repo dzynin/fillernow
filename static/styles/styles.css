@@ -360,6 +360,13 @@ body {
   border-color: #484d57;
 }
 
+.logo img {
+  position: absolute;
+  height: 5rem;
+  top: 0.3rem;
+  left: 1rem;
+}
+
 /* sidebar styling */
 
 .navbar {
@@ -368,6 +375,7 @@ body {
   height: 63px;
   position: absolute;
   padding: 0.6rem;
+  right: 0;
 }
 
 .navbar a {
@@ -395,33 +403,38 @@ body {
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
-  background-color: #111;
+  right: 0;
+  background-color: #a7acb1;
   opacity: 0.9;
   overflow-x: hidden;
   padding-top: 60px;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .side-nav a {
   padding: 10px 10px 10px 30px;
   text-decoration: none;
   font-size: 22px;
-  color: #ccc;
+  color: #454849;
   display: block;
   transition: 0.3s;
 }
 
 .side-nav a:hover {
-  color: #fff;
+  color: #1b1b1b;
 }
 
 .side-nav .btn-close {
   position: absolute;
   top: 0;
-  right: 22px;
+  right: 190px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.side-nav .sidebar-option {
+  text-align: right;
+  padding-right: 20px;
 }
 
 @media (max-width: 857px) and (min-width: 514px) {
@@ -524,7 +537,6 @@ body {
   .header {
     padding: 1rem;
     font-size: 2rem;
-    padding-left: 3rem;
   }
 
   .navbar a:hover {
@@ -577,9 +589,12 @@ body {
   .table1 tr td label {
     white-space: nowrap;
   }
+
+  .logo {
+    display: none;
+  }
+
+  .header {
+    padding-right: 5rem;
+  }
 }
-
-/* adding button */
-
-/* <!-- HTML !-->
-<button class="button-30" role="button">Button 30</button> */
